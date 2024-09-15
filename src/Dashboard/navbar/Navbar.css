@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
+
+.navbar {
+  background: #ffffff;
+  grid-area: nav;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px 0 30px;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.nav_icon {
+  display: none;
+}
+
+.nav_icon > i {
+  font-size: 26px;
+  color: #000000;
+}
+
+.navbar__left > a {
+  margin-right: 40px;
+  font-family: "Epilogue", sans-serif;
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  margin-right: 8px;
+  width: 20px;
+  height: auto;
+}
+
+.navbar__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__time {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.navbar__time .time-text {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #928888;
+}
+
+.navbar__right > a {
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.navbar__right > a > i {
+  color: #000000;
+  font-size: 16px;
+  border-radius: 50%;
+  padding: 7px;
+  background: #ffffff;
+  box-shadow: 2px 2px 5px #d7d7d7, -2px -2px 5px #ffffff;
+}
+
+@media only screen and (max-width: 978px) {
+  .nav_icon {
+    display: inline;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar__left {
+    display: none;
+  }
+}

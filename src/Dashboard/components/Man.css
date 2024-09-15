@@ -1,0 +1,110 @@
+main {
+  background: #f3f4f6;
+  grid-area: main;
+  overflow-y: auto;
+}
+
+.main__container {
+  padding: 20px 35px;
+}
+
+.main__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.card {
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card_inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.card_inner img {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 50px;
+  height: 50px;
+}
+
+.card_inner span {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card_inner h3 {
+  margin-top: 60px;
+  font-size: 18px;
+}
+
+.text-primary-p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #7a7a7a;
+  text-align: center;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.charts__right {
+  padding: 25px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.charts__left__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.active_card {
+  background: #5575a5;
+  color: #ffffff;
+}
+
+.active_card .text-primary-p {
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 855px) {
+  .main__cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .charts {
+    grid-template-columns: 1fr;
+  }
+
+  .card_inner {
+    padding-top: 50px;
+  }
+}
